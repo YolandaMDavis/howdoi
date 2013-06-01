@@ -15,8 +15,7 @@
 <!--Javascript library api  for google-->
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <!-- Javascript for this page specifically -->
-<script type="text/javascript" src="/bootstrap/js/bootstrap-modal.js"></script>
-<script type="text/javascript" src="/bootstrap/js/bootstrap-modalmanager.js"></script>
+
 <script type="text/javascript">
 </script>
 
@@ -112,12 +111,31 @@
       </div>
 
       <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1>How Do I?</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <a class="btn btn-large btn-success" href="#">Get started today</a>
+    <div class="jumbotron">
+        <h1>How Do I...</h1>
+        <p class="lead">Find out information about potential business areas?</p>
+        <a href="#myModal" role="button" class="btn" data-toggle="modal">Start Here</a>
+    </div>
+   
+   <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Research Business Regions</h3>
       </div>
-
+      <div class="modal-body">
+        <p>
+        <form action="search.php">
+            <select name="state" id="state">
+                <option value="121">Georgia</option>
+            </select>
+        </form>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        <button class="btn btn-primary">Search Region</button>
+      </div>
+    </div>
       <hr>
 
       <!-- Example row of columns -->
