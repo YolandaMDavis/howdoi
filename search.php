@@ -122,7 +122,7 @@ function renderDataDisplay(divId,action,title){
             dataType: "jsonp",
             data: requestdata+action,
             success: function (data) {                    
-                var txtMetaData = { "divId" : divId, "chartType"  : "pie" , "chartTitle" : title};               
+                var txtMetaData = { divId : divId, chartType  : 'pie' , chartTitle: title};               
                 displayData(txtMetaData,data);
                 
             },
@@ -146,10 +146,14 @@ function renderSearchContent(){
 
 $(function () {   
     renderSearchContent();
-    renderDataDisplay("incomeChart","getIncomeByCounty","Income By County");    
     //renderDataDisplay("educationChart","getEducationByCounty","Education Level By County");
     //renderDataDisplay("raceEthnicityChart","getRaceEthnicityByCounty","Race Ethnicity By County");    
 });
+
+
+   google.load("visualization", "1", {packages:["corechart"]});
+    google.load('visualization', '1', {packages:['table']});
+    renderDataDisplay("incomeChart","getIncomeByCounty","Income By County");    
 
 </script>
 
@@ -198,7 +202,7 @@ $(function () {
             </div>
             <div id="collapseOne" class="accordion-body collapse in">
               <div class="accordion-inner">
-                <div id="incomeChartX">
+                <div id="incomeChart">
                 <i class="icon-spinner icon-spin icon-large"></i> Loading region income data...
                 </div>
               </div>
