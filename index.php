@@ -101,7 +101,7 @@
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="index.php">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>                
                 <li><a href="#">Contact</a></li>
