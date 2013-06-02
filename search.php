@@ -8,11 +8,13 @@
 <link type="text/css" rel="stylesheet" href="/css/bootstrap-modal.css"/>
 <link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap-responsive.min.css"/>
 <link type="text/css" rel="stylesheet" href="/jquery/jquery-bootstrap/jquery-ui-1.8.16.custom.css"/>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="/jquery/jquery-ui-1.8.18.custom.min.js"></script>
 <script type="text/javascript" src="/jquery/jquery.tools.min.js"></script>
 <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/renderCharts.js"></script>
 <!--Javascript library api  for google-->
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <!-- Javascript for this page specifically -->
@@ -20,7 +22,7 @@
 <script type="text/javascript">
 </script>
 
-<title>How Do I</title>
+<title>Small Biz How Do I</title>
 </head>
 
 <body>
@@ -141,37 +143,71 @@ $(function () {
             <div class="container">
               <ul class="nav">
                 <li class="active"><a href="index.php">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>                
+                <li><a href="#">About</a></li>               
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>
           </div>
         </div><!-- /.navbar -->
       </div>
+      <div class="row-fluid">      
+       <div class="span12">
+           <div class="span6">
+           <h2>Region Information<h2>
+           <div class="well" id="regionInfo"></div>
+           
+           </div>
+           <div class="span6">
+           <h2>Community Talk</h2>
+           <div class="well" id="communityTalk"></div>
+           </div>
+       </div>
+      </div> 
       <div class="row-fluid">
-        <div class="span6">
-          <h2>Income</h2>
-          <div class="incomeChart">
-            Put an income chart
-          </div>         
-        </div> 
-        <div class="span6">
-          <h2>Education</h2>
-          <div class="educationChart">
-            Put an education chart
+      <div class="accordion" id="accordion2">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                County Income Information
+              </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse in">
+              <div class="accordion-inner" id="incomeChart">
+                <i class="icon-spinner icon-spin icon-large"></i> Loading region income data...
+              </div>
+            </div>
           </div>
-        </div> 
-      </div>
-      <div class="row-fluid">
-        <div class="span12" >
-          <h2>Race and Ethnicity</h2>
-          <div class="raceEthnicityChart">
-            Put an education chart
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                County Education Information
+              </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+              <div class="accordion-inner" id="educationChart">
+                <i class="icon-spinner icon-spin icon-large"></i> Loading region Education data...
+              </div>
+            </div>
           </div>
-        </div> 
-      </div>      
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                Race and Ethnicity Information
+              </a>
+            </div>
+            <div id="collapseThree" class="accordion-body collapse">
+              <div class="accordion-inner" id="raceEthnicityChart">
+                <i class="icon-spinner icon-spin icon-large"></i> Loading Race and Ethnicity data...
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
       <hr>
+       <div class="footer">
+        <p>&copy; Small Biz How Do I 2013</p>
+      </div>
+      
 </div>
 
 </body></html>

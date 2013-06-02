@@ -20,7 +20,7 @@
 <script type="text/javascript">
 </script>
 
-<title>How Do I</title>
+<title>Small Biz How Do I</title>
 </head>
 <body>
 <style type="text/css">
@@ -94,6 +94,29 @@
         border-radius: 0 3px 3px 0;
       }
     </style>
+    <script language="javascript">
+    
+    $(function () {  
+        var keyIndex = 0;
+        var questionArray = ["Learn the income of a particular market?","Discover more information about my customer base?","Find out information about potential business areas?"];
+        
+        function displayQuestion(){                            
+                $("#questions").fadeOut(1000,function(){
+                    $("#questions").html('<p class="lead">'+questionArray[keyIndex]+'</p>');
+                    $("#questions").fadeIn(1000);
+                });
+                                
+                if(keyIndex == questionArray.length - 1){
+                    keyIndex = 0;           
+                }
+                else{keyIndex++;}
+        }        
+        
+        setInterval(function(){displayQuestion();},3000);
+        
+    });
+    
+    </script>
 <div class="container">
 
       <div class="masthead">
@@ -102,8 +125,7 @@
             <div class="container">
               <ul class="nav">
                 <li class="active"><a href="index.php">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>                
+                <li><a href="#">About</a></li>                
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>
@@ -114,7 +136,7 @@
       <!-- Jumbotron -->
     <div class="jumbotron">
         <h1>How Do I...</h1>
-        <p class="lead">Find out information about potential business areas?</p>
+        <div id="questions"><p class="lead">Find out information about potential business areas?</p></div>
         <a href="#myModal" role="button" class="btn" data-toggle="modal">Start Here</a>
     </div>
    
@@ -143,7 +165,7 @@
       <hr>
 
       <div class="footer">
-        <p>&copy; Company 2013</p>
+        <p>&copy; Small Biz How Do I 2013</p>
       </div>
 
     </div> <!-- /container -->
