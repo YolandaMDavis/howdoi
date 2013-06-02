@@ -5,19 +5,19 @@
 <meta http-equiv="Content-Style-Type" content="text/css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link type="text/css" rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.min.css"/>
-<link type="text/css" rel="stylesheet" href="/css/bootstrap-modal.css"/>
-<link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap-responsive.min.css"/>
-<link type="text/css" rel="stylesheet" href="/jquery/jquery-bootstrap/jquery-ui-1.8.16.custom.css"/>
+<link type="text/css" rel="stylesheet" href="css/bootstrap-modal.css"/>
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css"/>
+<link type="text/css" rel="stylesheet" href="jquery/jquery-bootstrap/jquery-ui-1.8.16.custom.css"/>
 <link href="http://bootswatch.com/css/bootswatch.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="/jquery/jquery-ui-1.8.18.custom.min.js"></script>
-<script type="text/javascript" src="/jquery/jquery.tools.min.js"></script>
-<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/renderCharts.js"></script>
-<script type="text/javascript" src="/js/wikiSearch.js"></script>
-<script type="text/javascript" src="/js/twitterSearch.js"></script>
+<script type="text/javascript" src="jquery/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="jquery/jquery.tools.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/renderCharts.js"></script>
+<script type="text/javascript" src="js/wikiSearch.js"></script>
+<script type="text/javascript" src="js/twitterSearch.js"></script>
 <!--Javascript library api  for google-->
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <!-- Javascript for this page specifically -->
