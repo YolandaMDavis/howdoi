@@ -35,7 +35,7 @@ function twitterSearch(county,headerId,contentId){
     setInterval(function(){
         
                 $("#"+contentId).fadeOut(1000,function(){
-                    $("#"+headerId).text(tweetArray[keyIndex].user);
+                    $("#"+headerId).text('@'+tweetArray[keyIndex].user);
                     $("#"+contentId).html(tweetArray[keyIndex].content);
                     $("#"+contentId).fadeIn(1000);
                 });
