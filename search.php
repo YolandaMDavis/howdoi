@@ -18,6 +18,7 @@
 <script type="text/javascript" src="js/renderCharts.js"></script>
 <script type="text/javascript" src="js/wikiSearch.js"></script>
 <script type="text/javascript" src="js/twitterSearch.js"></script>
+
 <!--Javascript library api  for google-->
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <!-- Javascript for this page specifically -->
@@ -104,6 +105,8 @@
 <?php
 $county = $_POST['county'];
 $state = $_POST['state'];
+$countyName = $_POST['countyName'];
+$stateName = $_POST['stateName'];
 ?>
 
 <script language="javascript">
@@ -118,50 +121,30 @@ function renderDataDisplay(divId,action,title){
             url: url,
             dataType: "jsonp",
             data: requestdata+action,
-            success: function (data) {        
-                //displayAttr = {divId:divId,chartType:'bar',chartTitle:title};        
-                //displayData(displayAttr,data);
-                alert('make call to visualizations');
+            success: function (data) {                    
+                var txtMetaData = { "divId" : divId, "chartType"  : "pie" , "chartTitle" : title};               
+                displayData(txtMetaData,data);
             },
             error: function (data) {
                 $('#'+divId).text('Unable to display visualization');
             }
     });
+    
+    
 
 }
+
 
 function renderSearchContent(){
-    var stateId = '<?php echo $state; ?>';
-    var countyId = '<?php echo $county; ?>';
-
-    var url = "http://censuslink.herokuapp.com/censuslink.php";
-    var requestdata = "county="+countyId+"&state="+stateId+"&action=";
-    
-    $.ajax({
-            type: "GET",
-            url: url,
-            dataType: "jsonp",
-            data: requestdata,
-            success: function (data) {        
-                wikiSearch(data.county,"regionHeader","regionInfo");
-                twitterSearch(data.county,"twitterHeader","twitterInfo");    
-            },
-            error: function (data) {
-                
-            }
-    });
-
+    var stateName = '<?php echo $stateName; ?>';
+    var countyName = '<?php echo $countyName; ?>';
+    wikiSearch(stateName,"regionHeader","regionInfo");
+    twitterSearch(countyName,"twitterHeader","twitterInfo");    
 }
-
-
-
 
 $(function () {   
     
-    
-    wikiSearch('Fulton County, Georgia',"regionHeader","regionInfo");
-    twitterSearch("Fulton County","twitterHeader","twitterInfo");
-    
+    renderSearchContent();
     renderDataDisplay("incomeChart","getIncomeByCounty","Income By County");
     
     //renderDataDisplay("educationChart","getEducationByCounty","Education Level By County");
@@ -214,8 +197,10 @@ $(function () {
               </a>
             </div>
             <div id="collapseOne" class="accordion-body collapse in">
-              <div class="accordion-inner" id="incomeChart">
+              <div class="accordion-inner">
+                <div id="incomeChart">
                 <i class="icon-spinner icon-spin icon-large"></i> Loading region income data...
+                </div>
               </div>
             </div>
           </div>
@@ -239,7 +224,9 @@ $(function () {
             </div>
             <div id="collapseThree" class="accordion-body collapse">
               <div class="accordion-inner" id="raceEthnicityChart">
+                <div id="raceEthnicityChart">
                 <i class="icon-spinner icon-spin icon-large"></i> Loading Race and Ethnicity data...
+                </div
               </div>
             </div>
           </div>

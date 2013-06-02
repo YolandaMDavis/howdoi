@@ -22,6 +22,7 @@ function twitterSearch(county,headerId,contentId){
             data: requestdata,
             success: function (data) {                      
                 $.each(data.results,function(i,value){
+                    
                 var link = 'https://twitter.com/#!/'+value.from_user+'/status/'+value.id_str;
 	            tweetArray.push({user:value.from_user,content:'<a href="'+link+'" target="_blank">'+pottyMouthFilter(value.text)+'</a>'});	        
 	            });	
@@ -35,9 +36,14 @@ function twitterSearch(county,headerId,contentId){
     setInterval(function(){
         
                 $("#"+contentId).fadeOut(1000,function(){
-                    $("#"+headerId).text('@'+tweetArray[keyIndex].user);
-                    $("#"+contentId).html(tweetArray[keyIndex].content);
-                    $("#"+contentId).fadeIn(1000);
+                    if(tweetArray[keyIndex] != undefined){
+                        $("#"+headerId).text('@'+tweetArray[keyIndex].user);                    
+                        $("#"+contentId).html(tweetArray[keyIndex].content);
+                        $("#"+contentId).fadeIn(1000);
+                    }
+                    else{
+                        $("#"+contentId).html('No conversations available.');
+                    }
                 });
                                 
                 if(keyIndex == tweetArray.length - 1){

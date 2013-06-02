@@ -95,6 +95,18 @@
     </style>
     <script language="javascript">
     
+    function submitSearch(){
+       
+        var stateId = $('#state').val();
+        var stateName = $('#state option[value="'+stateId+'"]').text();
+        var countyId = $('#county').val();
+        var countyName = $('#county option[value="'+countyId+'"]').text().split(',')[0];                        
+        $("#stateName").val(stateName);            
+        $("#countyName").val(countyName);            
+        $('#searchRegions').submit(); 
+        
+    }
+       
     $(function () {  
         var keyIndex = 0;
         var questionArray = ["Learn the income of a particular market?","Discover more information about my customer base?","Find out information about potential business areas?"];
@@ -121,7 +133,7 @@
             data: "action=getCountyList&state="+stateId,
             success: function (data) {        
                 var options = '';
-                $(data.censusLink[0].counties).each(function (row) {
+                $(data.censusLink.counties).each(function (row) {
                     if(this[0] != 'NAME')                    
                         options += '<option value="' + this[2] + '">' + this[0] + '</option>';
                 });
@@ -145,7 +157,7 @@
             data: "action=getStateIdList",
             success: function (data) {        
                 var options = '';
-                $(data.censusLink[0].states).each(function (row) {
+                $(data.censusLink.states).each(function (row) {
                     if(this[0] != 'NAME')                    
                         options += '<option value="' + this[1] + '">' + this[0] + '</option>';
                 });
@@ -162,6 +174,8 @@
             } });
     
        }
+       
+       
         populateStates('state');
         setInterval(function(){displayQuestion();},3000);
         
@@ -199,6 +213,8 @@
       <div class="modal-body">
         <p>
         <form action="search.php" id="searchRegions" method="POST">
+            <input type="hidden" name="stateName" id="stateName" value=""/>
+            <input type="hidden" name="countyName" id="countyName" value=""/>
             <select name="state" id="state">
                 <option value="NONE">Select a State</option>
             </select>
@@ -209,7 +225,7 @@
       </div>
       <div class="modal-footer">
         <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-        <button class="btn btn-primary" onclick="$('#searchRegions').submit();">Search Region</button>
+        <button class="btn btn-primary" onclick="submitSearch();">Search Region</button>
       </div>
     </div>
       <hr>
