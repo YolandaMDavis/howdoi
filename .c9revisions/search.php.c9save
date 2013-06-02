@@ -268,3 +268,89 @@
 {"ts":1370152965593,"patch":[[{"diffs":[[0,"/li>"],[-1,"\n                <li><a href=\"#\">Services</a></li> "],[0,"    "]],"start1":4034,"start2":4034,"length1":59,"length2":8}]],"length":6523,"saved":false}
 {"ts":1370152976992,"patch":[[{"diffs":[[0,"\n<title>"],[1,"Small Biz"],[0,"How Do I"]],"start1":1296,"start2":1296,"length1":16,"length2":25}]],"length":6532,"saved":false}
 {"ts":1370152978110,"patch":[[{"diffs":[[0,"mall Biz"],[1," "],[0,"How Do I"]],"start1":1305,"start2":1305,"length1":16,"length2":17}]],"length":6533,"saved":false}
+{"ts":1370156238140,"patch":[[{"diffs":[[0,"\"></script>\n"],[1,"<script type=\"text/javascript\" src=\"/js/renderCharts.js\"></script>\n"],[0,"<!--Javascri"]],"start1":1077,"start2":1077,"length1":24,"length2":91}]],"length":6600,"saved":false}
+{"ts":1370156243769,"patch":[[{"diffs":[[0,"cript\" src=\"/js/"],[-1,"render"],[1,"wiki"],[0,"Charts.js\"></scr"]],"start1":1113,"start2":1113,"length1":38,"length2":36}]],"length":6598,"saved":false}
+{"ts":1370156247356,"patch":[[{"diffs":[[0,"/js/wiki"],[-1,"Charts"],[1,"Search"],[0,".js\"></s"]],"start1":1125,"start2":1125,"length1":22,"length2":22}]],"length":6598,"saved":false}
+{"ts":1370156270582,"patch":[[{"diffs":[[0,"ion () {   \n"],[1,"\n"],[0,"    renderDa"]],"start1":3507,"start2":3507,"length1":24,"length2":25}]],"length":6599,"saved":false}
+{"ts":1370156271949,"patch":[[{"diffs":[[0,"() {   \n"],[1,"    "],[0,"\n    ren"]],"start1":3511,"start2":3511,"length1":16,"length2":20}]],"length":6603,"saved":false}
+{"ts":1370156274767,"patch":[[{"diffs":[[0,"() {   \n    "],[1,"wikiSearch()"],[0,"\n    renderD"]],"start1":3511,"start2":3511,"length1":24,"length2":36}]],"length":6615,"saved":false}
+{"ts":1370156275903,"patch":[[{"diffs":[[0,"iSearch("],[1,"''"],[0,")\n    re"]],"start1":3526,"start2":3526,"length1":16,"length2":18}]],"length":6617,"saved":false}
+{"ts":1370156277196,"patch":[[{"diffs":[[0,"Search('"],[1,"Geor"],[0,"')\n    r"]],"start1":3527,"start2":3527,"length1":16,"length2":20}]],"length":6621,"saved":false}
+{"ts":1370156278207,"patch":[[{"diffs":[[0,"ch('Geor"],[1,"gia"],[0,"')\n    r"]],"start1":3531,"start2":3531,"length1":16,"length2":19}]],"length":6624,"saved":false}
+{"ts":1370156280523,"patch":[[{"diffs":[[0,"eorgia')"],[1,";"],[0,"\n    ren"]],"start1":3536,"start2":3536,"length1":16,"length2":17}]],"length":6625,"saved":false}
+{"ts":1370156908463,"patch":[[{"diffs":[[0,"onInfo\">"],[1,"\n           \n           "],[0,"</div>\n "]],"start1":4476,"start2":4476,"length1":16,"length2":40}]],"length":6649,"saved":false}
+{"ts":1370156910288,"patch":[[{"diffs":[[0,"o\">\n           \n"],[1,"           \n"],[0,"           </div"]],"start1":4481,"start2":4481,"length1":32,"length2":44}]],"length":6661,"saved":false}
+{"ts":1370156917803,"patch":[[{"diffs":[[0,"ormation"],[1," "],[0,"<h2>\n   "]],"start1":4426,"start2":4426,"length1":16,"length2":17}]],"length":6662,"saved":false}
+{"ts":1370156918583,"patch":[[{"diffs":[[0,"ormation"],[-1," "],[0,"<h2>\n   "]],"start1":4426,"start2":4426,"length1":17,"length2":16}]],"length":6661,"saved":false}
+{"ts":1370156920353,"patch":[[{"diffs":[[0,"ormation"],[1,":"],[0,"<h2>\n   "]],"start1":4426,"start2":4426,"length1":16,"length2":17}]],"length":6662,"saved":false}
+{"ts":1370156922184,"patch":[[{"diffs":[[0,"rmation:"],[1," "],[0,"<h2>\n   "]],"start1":4427,"start2":4427,"length1":16,"length2":17}]],"length":6663,"saved":false}
+{"ts":1370156923110,"patch":[[{"diffs":[[0,"rmation:"],[-1," "],[0,"<h2>\n   "]],"start1":4427,"start2":4427,"length1":17,"length2":16}]],"length":6662,"saved":false}
+{"ts":1370156924060,"patch":[[{"diffs":[[0,"mation:<"],[1,"><"],[0,"h2>\n    "]],"start1":4428,"start2":4428,"length1":16,"length2":18}]],"length":6664,"saved":false}
+{"ts":1370156925328,"patch":[[{"diffs":[[0,"mation:<"],[1,"span"],[0,"><h2>\n  "]],"start1":4428,"start2":4428,"length1":16,"length2":20}]],"length":6668,"saved":false}
+{"ts":1370156926241,"patch":[[{"diffs":[[0,"on:<span"],[1," id"],[0,"><h2>\n  "]],"start1":4432,"start2":4432,"length1":16,"length2":19}]],"length":6671,"saved":false}
+{"ts":1370156927609,"patch":[[{"diffs":[[0,"<span id"],[1,"="],[0,"><h2>\n  "]],"start1":4435,"start2":4435,"length1":16,"length2":17}]],"length":6672,"saved":false}
+{"ts":1370156928765,"patch":[[{"diffs":[[0,"span id="],[1,"\""],[0,"><h2>\n  "]],"start1":4436,"start2":4436,"length1":16,"length2":17}]],"length":6673,"saved":false}
+{"ts":1370156929647,"patch":[[{"diffs":[[0,"pan id=\""],[1,"\""],[0,"><h2>\n  "]],"start1":4437,"start2":4437,"length1":16,"length2":17}]],"length":6674,"saved":false}
+{"ts":1370156932828,"patch":[[{"diffs":[[0," id=\"\"><"],[1,"/span<"],[0,"h2>\n    "]],"start1":4440,"start2":4440,"length1":16,"length2":22}]],"length":6680,"saved":false}
+{"ts":1370156934849,"patch":[[{"diffs":[[0,"\"></span"],[1,">"],[0,"<h2>\n   "]],"start1":4445,"start2":4445,"length1":16,"length2":17}]],"length":6681,"saved":false}
+{"ts":1370156938460,"patch":[[{"diffs":[[0,"pan id=\""],[1,"regionH"],[0,"\"></span"]],"start1":4437,"start2":4437,"length1":16,"length2":23}]],"length":6688,"saved":false}
+{"ts":1370156939813,"patch":[[{"diffs":[[0,"\"regionH"],[1,"eader"],[0,"\"></span"]],"start1":4444,"start2":4444,"length1":16,"length2":21}]],"length":6693,"saved":false}
+{"ts":1370156963062,"patch":[[{"diffs":[[0,"Georgia'"],[1,",\"\""],[0,");\n    r"]],"start1":3535,"start2":3535,"length1":16,"length2":19}]],"length":6696,"saved":false}
+{"ts":1370156964787,"patch":[[{"diffs":[[0,"orgia',\""],[1,"regionH"],[0,"\");\n    "]],"start1":3537,"start2":3537,"length1":16,"length2":23}]],"length":6703,"saved":false}
+{"ts":1370156966303,"patch":[[{"diffs":[[0,"\"regionH"],[1,"eader"],[0,"\");\n    "]],"start1":3544,"start2":3544,"length1":16,"length2":21}]],"length":6708,"saved":false}
+{"ts":1370156968547,"patch":[[{"diffs":[[0,"nHeader\""],[1,","],[0,");\n    r"]],"start1":3550,"start2":3550,"length1":16,"length2":17}]],"length":6709,"saved":false}
+{"ts":1370156971637,"patch":[[{"diffs":[[0,"Header\","],[1,"\"regionInfo\""],[0,");\n    r"]],"start1":3551,"start2":3551,"length1":16,"length2":28}]],"length":6721,"saved":false}
+{"ts":1370157003541,"patch":[[{"diffs":[[0,"fo\">\n           "],[-1,"\n  "],[0,"         \n      "]],"start1":4540,"start2":4540,"length1":35,"length2":32}]],"length":6718,"saved":false}
+{"ts":1370157007375,"patch":[[{"diffs":[[0,"onInfo\">"],[-1,"\n"],[0,"        "]],"start1":4536,"start2":4536,"length1":17,"length2":16}]],"length":6717,"saved":false}
+{"ts":1370157015790,"patch":[[{"diffs":[[0,"          </div>"],[-1,"\n"],[0,"           \n    "]],"start1":4566,"start2":4566,"length1":33,"length2":32}]],"length":6716,"saved":false}
+{"ts":1370157307090,"patch":[[{"diffs":[[0,"Search('"],[1,"Fulton County, "],[0,"Georgia'"]],"start1":3527,"start2":3527,"length1":16,"length2":31}]],"length":6731,"saved":false}
+{"ts":1370157385923,"patch":[[{"diffs":[[0,"on:<"],[-1,"span id=\"regionHeader\"></span><"],[0,"h2>\n"]],"start1":4475,"start2":4475,"length1":39,"length2":8}]],"length":6700,"saved":false}
+{"ts":1370157395325,"patch":[[{"diffs":[[0,"mation:<"],[1,"/"],[0,"h2>\n    "]],"start1":4471,"start2":4471,"length1":16,"length2":17}]],"length":6701,"saved":false}
+{"ts":1370157404299,"patch":[[{"diffs":[[0,"ation:</h2>\n"],[1,"           \n"],[0,"           <"]],"start1":4472,"start2":4472,"length1":24,"length2":36}]],"length":6713,"saved":false}
+{"ts":1370157406278,"patch":[[{"diffs":[[0,"/h2>\n           "],[1,"<span id=\"regionHeader\"></span>"],[0,"\n           <div"]],"start1":4479,"start2":4479,"length1":32,"length2":63}]],"length":6744,"saved":false}
+{"ts":1370157445214,"patch":[[{"diffs":[[0,"    "],[-1,"<span id=\"regionHeader\"></span>"],[0,"\n   "]],"start1":4491,"start2":4491,"length1":39,"length2":8}]],"length":6713,"saved":false}
+{"ts":1370157449122,"patch":[[{"diffs":[[0,"mation:</h2>"],[-1,"\n"],[0,"           \n"]],"start1":4471,"start2":4471,"length1":25,"length2":24}]],"length":6712,"saved":false}
+{"ts":1370157451900,"patch":[[{"diffs":[[0,"onInfo\">"],[-1,"         "],[1,"\n"],[0,"        "]],"start1":4532,"start2":4532,"length1":25,"length2":17}]],"length":6704,"saved":false}
+{"ts":1370157453112,"patch":[[{"diffs":[[0,"fo\">\n           "],[1,"<span id=\"regionHeader\"></span>"],[0,"\n           </di"]],"start1":4536,"start2":4536,"length1":32,"length2":63}]],"length":6735,"saved":false}
+{"ts":1370157454415,"patch":[[{"diffs":[[0,"</span>\n"],[1,"           \n"],[0,"        "]],"start1":4576,"start2":4576,"length1":16,"length2":28}]],"length":6747,"saved":false}
+{"ts":1370157455679,"patch":[[{"diffs":[[0,"pan>\n           "],[1,"<d"],[0,"\n           </di"]],"start1":4579,"start2":4579,"length1":32,"length2":34}]],"length":6749,"saved":false}
+{"ts":1370157456573,"patch":[[{"diffs":[[0,"      <d"],[1,"iv "],[0,"\n       "]],"start1":4589,"start2":4589,"length1":16,"length2":19}]],"length":6752,"saved":false}
+{"ts":1370157457869,"patch":[[{"diffs":[[0,"   <div "],[1,"id"],[0,"\n       "]],"start1":4592,"start2":4592,"length1":16,"length2":18}]],"length":6754,"saved":false}
+{"ts":1370157461364,"patch":[[{"diffs":[[0," <div id"],[1,"=\"regionInfo\""],[0,"\n       "]],"start1":4594,"start2":4594,"length1":16,"length2":29}]],"length":6767,"saved":false}
+{"ts":1370157462532,"patch":[[{"diffs":[[0,"ionInfo\""],[1,"><"],[0,"\n       "]],"start1":4607,"start2":4607,"length1":16,"length2":18}]],"length":6769,"saved":false}
+{"ts":1370157464635,"patch":[[{"diffs":[[0,"nInfo\"><"],[1,"/div>"],[0,"\n       "]],"start1":4609,"start2":4609,"length1":16,"length2":21}]],"length":6774,"saved":false}
+{"ts":1370157472524,"patch":[[{"diffs":[[0,"s=\"well\""],[-1," id=\"regionInfo\""],[0,">\n      "]],"start1":4515,"start2":4515,"length1":32,"length2":16}]],"length":6758,"saved":false}
+{"ts":1370157476937,"patch":[[{"diffs":[[0,"        "],[1," "],[0,"<span id"]],"start1":4528,"start2":4528,"length1":16,"length2":17}]],"length":6759,"saved":false}
+{"ts":1370157478323,"patch":[[{"diffs":[[0,"pan>\n           "],[1," "],[0,"<div id=\"regionI"]],"start1":4564,"start2":4564,"length1":32,"length2":33}]],"length":6760,"saved":false}
+{"ts":1370157600434,"patch":[[{"diffs":[[0,"       <"],[-1,"span"],[1,"h3"],[0," id=\"reg"]],"start1":4530,"start2":4530,"length1":20,"length2":18}]],"length":6758,"saved":false}
+{"ts":1370157605663,"patch":[[{"diffs":[[0,"der\"></s"],[-1,"pan"],[0,">\n      "]],"start1":4554,"start2":4554,"length1":19,"length2":16}]],"length":6755,"saved":false}
+{"ts":1370157606473,"patch":[[{"diffs":[[0,"ader\"></"],[-1,"s"],[0,">\n      "]],"start1":4553,"start2":4553,"length1":17,"length2":16}]],"length":6754,"saved":false}
+{"ts":1370157607496,"patch":[[{"diffs":[[0,"ader\"></"],[1,"h3"],[0,">\n      "]],"start1":4553,"start2":4553,"length1":16,"length2":18}]],"length":6756,"saved":false}
+{"ts":1370157622645,"patch":[[{"diffs":[[0,"ormation"],[-1,":"],[0,"</h2>   "]],"start1":4469,"start2":4469,"length1":17,"length2":16}]],"length":6755,"saved":false}
+{"ts":1370159970817,"patch":[[{"diffs":[[0,"\"></script>\n"],[1,"<script type=\"text/javascript\" src=\"/js/wikiSearch.js\"></script>\n"],[0,"<!--Javascri"]],"start1":1142,"start2":1142,"length1":24,"length2":89}]],"length":6820,"saved":false}
+{"ts":1370159976568,"patch":[[{"diffs":[[0,"ript\" src=\"/js/w"],[-1,"iki"],[0,"Search.js\"></scr"]],"start1":1179,"start2":1179,"length1":35,"length2":32}]],"length":6817,"saved":false}
+{"ts":1370159979255,"patch":[[{"diffs":[[0,"rc=\"/js/"],[-1,"w"],[1,"twitter"],[0,"Search.j"]],"start1":1186,"start2":1186,"length1":17,"length2":23}]],"length":6823,"saved":false}
+{"ts":1370160028115,"patch":[[{"diffs":[[0,"    "],[-1,"alert('call went wrong');"],[1,"$()"],[0,"\n   "]],"start1":3512,"start2":3512,"length1":33,"length2":11}]],"length":6801,"saved":false}
+{"ts":1370160029537,"patch":[[{"diffs":[[0,"      $("],[1,"''"],[0,")\n      "]],"start1":3510,"start2":3510,"length1":16,"length2":18}]],"length":6803,"saved":false}
+{"ts":1370160031816,"patch":[[{"diffs":[[0,"     $('"],[1,"#"],[0,"')\n     "]],"start1":3511,"start2":3511,"length1":16,"length2":17}]],"length":6804,"saved":false}
+{"ts":1370160033990,"patch":[[{"diffs":[[0,"   $('#'"],[1,"+divId"],[0,")\n      "]],"start1":3513,"start2":3513,"length1":16,"length2":22}]],"length":6810,"saved":false}
+{"ts":1370160034568,"patch":[[{"diffs":[[0,"'+divId)"],[1,"."],[0,"\n       "]],"start1":3520,"start2":3520,"length1":16,"length2":17}]],"length":6811,"saved":false}
+{"ts":1370160037402,"patch":[[{"diffs":[[0,"+divId)."],[1,"html"],[0,"\n       "]],"start1":3521,"start2":3521,"length1":16,"length2":20}]],"length":6815,"saved":false}
+{"ts":1370160038498,"patch":[[{"diffs":[[0,"Id).html"],[1,"()"],[0,"\n       "]],"start1":3525,"start2":3525,"length1":16,"length2":18}]],"length":6817,"saved":false}
+{"ts":1370160041051,"patch":[[{"diffs":[[0,"d).html("],[1,"''"],[0,")\n      "]],"start1":3526,"start2":3526,"length1":16,"length2":18}]],"length":6819,"saved":false}
+{"ts":1370160044098,"patch":[[{"diffs":[[0,").html('"],[1,"Unable "],[0,"')\n     "]],"start1":3527,"start2":3527,"length1":16,"length2":23}]],"length":6826,"saved":false}
+{"ts":1370160047583,"patch":[[{"diffs":[[0,"+divId)."],[-1,"html"],[0,"('Unable"]],"start1":3521,"start2":3521,"length1":20,"length2":16}]],"length":6822,"saved":false}
+{"ts":1370160049397,"patch":[[{"diffs":[[0,"+divId)."],[1,"text"],[0,"('Unable"]],"start1":3521,"start2":3521,"length1":16,"length2":20}]],"length":6826,"saved":false}
+{"ts":1370160054751,"patch":[[{"diffs":[[0,"'Unable "],[1,"to display "],[0,"')\n     "]],"start1":3534,"start2":3534,"length1":16,"length2":27}]],"length":6837,"saved":false}
+{"ts":1370160059447,"patch":[[{"diffs":[[0,"display "],[1,"visualiz"],[0,"')\n     "]],"start1":3545,"start2":3545,"length1":16,"length2":24}]],"length":6845,"saved":false}
+{"ts":1370160061930,"patch":[[{"diffs":[[0,"visualiz"],[1,"ation"],[0,"')\n     "]],"start1":3553,"start2":3553,"length1":16,"length2":21}]],"length":6850,"saved":false}
+{"ts":1370160208572,"patch":[[{"diffs":[[0,"zation')"],[1,";"],[0,"\n       "]],"start1":3560,"start2":3560,"length1":16,"length2":17},{"diffs":[[0,"me By County\");\n"],[1,"    twitterSearch('Fulton County, Georgia',\"regionHeader\",\"regionInfo\");\n"],[0,"    //renderData"]],"start1":3746,"start2":3746,"length1":32,"length2":105},{"diffs":[[0,"tyTalk\">"],[1,"\n            <h3 id=\"twitterHeader\"></h3>\n            <div id=\"twitterInfo\"></div>"],[0,"</div>\n "]],"start1":4926,"start2":4926,"length1":16,"length2":98}]],"length":7006,"saved":false}
+{"ts":1370160212214,"patch":[[{"diffs":[[0,"ulton County"],[-1,", Georgia"],[0,"',\"regionHea"]],"start1":3782,"start2":3782,"length1":33,"length2":24}]],"length":6997,"saved":false}
+{"ts":1370160214714,"patch":[[{"diffs":[[0,"n County"],[-1,"'"],[1,"\""],[0,",\"region"]],"start1":3786,"start2":3786,"length1":17,"length2":17}]],"length":6997,"saved":false}
+{"ts":1370160218000,"patch":[[{"diffs":[[0,"itterSearch("],[-1,"'"],[1,"\""],[0,"Fulton Count"]],"start1":3768,"start2":3768,"length1":25,"length2":25}]],"length":6997,"saved":false}
+{"ts":1370160223273,"patch":[[{"diffs":[[0,"ounty\",\""],[-1,"region"],[1,"twitter"],[0,"Header\","]],"start1":3789,"start2":3789,"length1":22,"length2":23}]],"length":6998,"saved":false}
+{"ts":1370160226948,"patch":[[{"diffs":[[0,"twitterHeader\",\""],[-1,"region"],[1,"twitter"],[0,"Info\");\n    //re"]],"start1":3797,"start2":3797,"length1":38,"length2":39}]],"length":6999,"saved":false}
+{"ts":1370160956809,"patch":[[{"diffs":[[0,"\"></div>"],[1,"\n            "],[0,"</div>\n "]],"start1":5001,"start2":5001,"length1":16,"length2":29}]],"length":7012,"saved":false}
+{"ts":1370160964924,"patch":[[{"diffs":[[0,"itterInfo\"><"],[1,"i class=\"icon-spinner icon-spin icon-large\"></i> Loading region income data...<"],[0,"/div>\n      "]],"start1":4992,"start2":4992,"length1":24,"length2":103}]],"length":7091,"saved":false}
+{"ts":1370160971295,"patch":[[{"diffs":[[0,"</i>"],[-1," Loading region income data..."],[1,"Collect"],[0,"</di"]],"start1":5048,"start2":5048,"length1":38,"length2":15}]],"length":7068,"saved":false}
+{"ts":1370160977422,"patch":[[{"diffs":[[0,">Collect"],[1,"ing community chatter..."],[0,"</div>\n "]],"start1":5051,"start2":5051,"length1":16,"length2":40}]],"length":7092,"saved":false}

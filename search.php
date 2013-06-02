@@ -15,6 +15,8 @@
 <script type="text/javascript" src="/jquery/jquery.tools.min.js"></script>
 <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/renderCharts.js"></script>
+<script type="text/javascript" src="/js/wikiSearch.js"></script>
+<script type="text/javascript" src="/js/twitterSearch.js"></script>
 <!--Javascript library api  for google-->
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <!-- Javascript for this page specifically -->
@@ -121,14 +123,16 @@ function renderDataDisplay(divId,action,title){
                 alert('make call to visualizations');
             },
             error: function (data) {
-                alert('call went wrong');
+                $('#'+divId).text('Unable to display visualization');
             }
     });
 
 }
 
 $(function () {   
+    wikiSearch('Fulton County, Georgia',"regionHeader","regionInfo");
     renderDataDisplay("incomeChart","getIncomeByCounty","Income By County");
+    twitterSearch("Fulton County","twitterHeader","twitterInfo");
     //renderDataDisplay("educationChart","getEducationByCounty","Education Level By County");
     //renderDataDisplay("raceEthnicityChart","getRaceEthnicityByCounty","Race Ethnicity By County");    
 });
@@ -153,13 +157,18 @@ $(function () {
       <div class="row-fluid">      
        <div class="span12">
            <div class="span6">
-           <h2>Region Information<h2>
-           <div class="well" id="regionInfo"></div>
-           
+           <h2>Region Information</h2>           
+           <div class="well">
+            <h3 id="regionHeader"></h3>
+            <div id="regionInfo"></div>
+           </div>           
            </div>
            <div class="span6">
            <h2>Community Talk</h2>
-           <div class="well" id="communityTalk"></div>
+           <div class="well" id="communityTalk">
+            <h3 id="twitterHeader"></h3>
+            <div id="twitterInfo"><i class="icon-spinner icon-spin icon-large"></i>Collecting community chatter...</div>
+            </div>
            </div>
        </div>
       </div> 
