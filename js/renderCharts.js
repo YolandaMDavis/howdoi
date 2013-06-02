@@ -31,7 +31,7 @@ function drawTable() {
   var arrData = new Array();
 
   for(var key in objData_json) {
-    arrData.push(new Array(objData_json[key].title, objData_json[key].quantity));
+    arrData.push(new Array(objData_json[key].title,parseInt( objData_json[key].quantity)) );
   }
 
   var data = new google.visualization.DataTable();
@@ -74,7 +74,7 @@ function drawChart() {
   var arrData = new Array();
 
   for(var key in objData_json) {
-    arrData.push(new Array(objData_json[key].title, objData_json[key].quantity));
+    arrData.push(new Array(objData_json[key].title, parseInt(objData_json[key].quantity)));
   }
 
   var data = google.visualization.arrayToDataTable(arrData);
@@ -94,19 +94,18 @@ function drawChart() {
 
 }
 
+
 ////////////////////////////////////////////////////////////////////////
 /**
   * Draw chart using data objData_json
   * @tparam JSON    objMetaData_json_in  the format and display details
   * @tparam string  txtData_json         the data to be displayed, unparsed JSON
   */
-function displayData(objMetaData_json_in, txtData_json) {
+function displayData(objMetaData_json_in, objData_json_in) {
 
-  objData_json = JSON.parse(txtData_json);
+  var thiskey = objData_json_in["censusLink"]["keys"][0];
+  objData_json = objData_json_in["censusLink"][thiskey]["results"];
   objMetaData_json = objMetaData_json_in;
-
-  var thiskey = objData_jsonX["censusLink"][1]["keys"][0];
-  objData_json = objData_jsonX["censusLink"][0][thiskey]["results"];
 
   if( objMetaData_json.chartType != "table" ) {
     google.load("visualization", "1", {packages:["corechart"]});
@@ -117,31 +116,41 @@ function displayData(objMetaData_json_in, txtData_json) {
   google.setOnLoadCallback(drawTable);
 
 }
+
+
+
+
 ////////////////////////////////////////////////////////////////////////
 /**
-  * TEST/EXAMPLE
+  * temporary
   */
 function displayData_alt(txtMetaData_json, txtData_json) {
     var objMetaData_json_in = JSON.parse(txtMetaData_json);
-    displayData(objMetaData_json_in, txtData_json);
+
+    var objData_json_in = JSON.parse(txtData_json);
+
+    displayData(objMetaData_json_in, objData_json_in);
 }
 
 ////////////////////////////////////////////////////////////////////////
 /**
-  * TEST/EXAMPLE
+  * demonstrate
   */
 function exampleTest(txtMetaData_json, txtData_json) {
 
     var txtData_jsonA = '{  "_002E" : { "title" : "Less than $10,000   " , "quantity" : 31880 },  "_003E" : { "title" : "$10,000 to $14,999  " , "quantity" : 18130 },  "_004E" : { "title" : "$15,000 to $19,999  " , "quantity" : 15638 },  "_005E" : { "title" : "$20,000 to $24,999  " , "quantity" : 16369 },  "_006E" : { "title" : "$25,000 to $29,999  " , "quantity" : 15694 },  "_007E" : { "title" : "$30,000 to $34,999  " , "quantity" : 17698 },  "_008E" : { "title" : "$35,000 to $39,999  " , "quantity" : 15632 },  "_009E" : { "title" : "$40,000 to $44,999  " , "quantity" : 16647 },  "_010E" : { "title" : "$45,000 to $49,999  " , "quantity" : 12285 },  "_011E" : { "title" : "$50,000 to $59,999  " , "quantity" : 25852 },  "_012E" : { "title" : "$60,000 to $74,999  " , "quantity" : 31455 },  "_013E" : { "title" : "$75,000 to $99,999  " , "quantity" : 37448 },  "_014E" : { "title" : "$100,000 to $124,999" , "quantity" : 29482 },  "_015E" : { "title" : "$125,000 to $149,999" , "quantity" : 17489 },  "_016E" : { "title" : "$150,000 to $199,999" , "quantity" : 21996 },  "_017E" : { "title" : "$200,000 or more    " , "quantity" : 33768 } }';
 
-    var txtData_jsonB = '{"censusLink":[ {"income":{"_001E":{"title":"Total","quantity":"357463"},"results":{"_002E":{"title":"Less than $10,000","quantity":"31880"},"_003E":{"title":"$10,000 to $14,999","quantity":"18130"},"_004E":{"title":"$15,000 to $19,999","quantity":"15638"},"_005E":{"title":"$20,000 to $24,999","quantity":"16369"},"_006E":{"title":"$25,000 to $29,999","quantity":"15694"},"_007E":{"title":"$30,000 to $34,999","quantity":"17698"},"_008E":{"title":"$35,000 to $39,999","quantity":"15632"},"_009E":{"title":"$40,000 to $44,999","quantity":"16647"},"_010E":{"title":"$45,000 to $49,999","quantity":"12285"},"_011E":{"title":"$50,000 to $59,999","quantity":"25852"},"_012E":{"title":"$60,000 to $74,999","quantity":"31455"},"_013E":{"title":"$75,000 to $99,999","quantity":"37448"},"_014E":{"title":"$100,000 to $124,999","quantity":"29482"},"_015E":{"title":"$125,000 to $149,999","quantity":"17489"},"_016E":{"title":"$150,000 to $199,999","quantity":"21996"},"_017E":{"title":"$200,000 or more","quantity":"33768"}}}}, {"keys" : ["income"] } ]}';
+    var txtData_jsonB1 = '{"censusLink":{"income":{"_001E":{"title":"Total","quantity":"357463"},"results":{"_002E":{"title":"Less than $10,000","quantity":"31880"},"_003E":{"title":"$10,000 to $14,999","quantity":"18130"},"_004E":{"title":"$15,000 to $19,999","quantity":"15638"},"_005E":{"title":"$20,000 to $24,999","quantity":"16369"},"_006E":{"title":"$25,000 to $29,999","quantity":"15694"},"_007E":{"title":"$30,000 to $34,999","quantity":"17698"},"_008E":{"title":"$35,000 to $39,999","quantity":"15632"},"_009E":{"title":"$40,000 to $44,999","quantity":"16647"},"_010E":{"title":"$45,000 to $49,999","quantity":"12285"},"_011E":{"title":"$50,000 to $59,999","quantity":"25852"},"_012E":{"title":"$60,000 to $74,999","quantity":"31455"},"_013E":{"title":"$75,000 to $99,999","quantity":"37448"},"_014E":{"title":"$100,000 to $124,999","quantity":"29482"},"_015E":{"title":"$125,000 to $149,999","quantity":"17489"},"_016E":{"title":"$150,000 to $199,999","quantity":"21996"},"_017E":{"title":"$200,000 or more","quantity":"33768"}}}}, {"keys" : ["income"] } }';
+
+    var txtData_jsonB = '{"censusLink":{"income":{"_001E":{"title":"Total","quantity":"357463"},"results":{"_002E":{"title":"Less than $10,000","quantity":"31880"},"_003E":{"title":"$10,000 to $14,999","quantity":"18130"},"_004E":{"title":"$15,000 to $19,999","quantity":"15638"},"_005E":{"title":"$20,000 to $24,999","quantity":"16369"},"_006E":{"title":"$25,000 to $29,999","quantity":"15694"},"_007E":{"title":"$30,000 to $34,999","quantity":"17698"},"_008E":{"title":"$35,000 to $39,999","quantity":"15632"},"_009E":{"title":"$40,000 to $44,999","quantity":"16647"},"_010E":{"title":"$45,000 to $49,999","quantity":"12285"},"_011E":{"title":"$50,000 to $59,999","quantity":"25852"},"_012E":{"title":"$60,000 to $74,999","quantity":"31455"},"_013E":{"title":"$75,000 to $99,999","quantity":"37448"},"_014E":{"title":"$100,000 to $124,999","quantity":"29482"},"_015E":{"title":"$125,000 to $149,999","quantity":"17489"},"_016E":{"title":"$150,000 to $199,999","quantity":"21996"},"_017E":{"title":"$200,000 or more","quantity":"33768"}}},"keys":["income"]}}';
 
     var txtData_jsonC = '{ "_002E":{"title":"Less than $10,000","quantity":"31880"},"_003E":{"title":"$10,000 to $14,999","quantity":"18130"},"_004E":{"title":"$15,000 to $19,999","quantity":"15638"},"_005E":{"title":"$20,000 to $24,999","quantity":"16369"},"_006E":{"title":"$25,000 to $29,999","quantity":"15694"},"_007E":{"title":"$30,000 to $34,999","quantity":"17698"},"_008E":{"title":"$35,000 to $39,999","quantity":"15632"},"_009E":{"title":"$40,000 to $44,999","quantity":"16647"},"_010E":{"title":"$45,000 to $49,999","quantity":"12285"},"_011E":{"title":"$50,000 to $59,999","quantity":"25852"},"_012E":{"title":"$60,000 to $74,999","quantity":"31455"},"_013E":{"title":"$75,000 to $99,999","quantity":"37448"},"_014E":{"title":"$100,000 to $124,999","quantity":"29482"},"_015E":{"title":"$125,000 to $149,999","quantity":"17489"},"_016E":{"title":"$150,000 to $199,999","quantity":"21996"},"_017E":{"title":"$200,000 or more","quantity":"33768" }}';
 
     // Pie
     var txtMetaData_jsonA = '{ "divId" : "chart_div", "divId_table" : "table_div"  , "chartType"  : "pie" , "chartTitle" : "Test chartTitle"}';
 
-    // Pie
+
+    // bar
     var txtMetaData_jsonB = '{ "divId" : "chart_div", "divId_table" : "table_div"  , "chartType"  : "bar" , "chartTitle" : "other Test chartTitle"}';
 
     // Table only
@@ -149,6 +158,7 @@ function exampleTest(txtMetaData_json, txtData_json) {
 
 
     displayData_alt(txtMetaData_jsonA, txtData_jsonB);
+
 }
 
 /**
