@@ -5,19 +5,19 @@
 <meta http-equiv="Content-Style-Type" content="text/css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link type="text/css" rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.min.css"/>
-<link type="text/css" rel="stylesheet" href="/css/bootstrap-modal.css"/>
-<link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap-responsive.min.css"/>
-<link type="text/css" rel="stylesheet" href="/jquery/jquery-bootstrap/jquery-ui-1.8.16.custom.css"/>
-<link href="http://bootswatch.com/flatly/css/bootswatch.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/bootstrap-modal.css"/>
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css"/>
+<link type="text/css" rel="stylesheet" href="jquery/jquery-bootstrap/jquery-ui-1.8.16.custom.css"/>
+<link href="http://bootswatch.com/css/bootswatch.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="/jquery/jquery-ui-1.8.18.custom.min.js"></script>
-<script type="text/javascript" src="/jquery/jquery.tools.min.js"></script>
-<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/renderCharts.js"></script>
-<script type="text/javascript" src="/js/wikiSearch.js"></script>
-<script type="text/javascript" src="/js/twitterSearch.js"></script>
+<script type="text/javascript" src="jquery/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="jquery/jquery.tools.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/renderCharts.js"></script>
+<script type="text/javascript" src="js/wikiSearch.js"></script>
+<script type="text/javascript" src="js/twitterSearch.js"></script>
 <!--Javascript library api  for google-->
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <!-- Javascript for this page specifically -->
@@ -130,10 +130,40 @@ function renderDataDisplay(divId,action,title){
 
 }
 
+function renderSearchContent(){
+    var stateId = '<?php echo $state; ?>';
+    var countyId = '<?php echo $county; ?>';
+
+    var url = "http://censuslink.herokuapp.com/censuslink.php";
+    var requestdata = "county="+countyId+"&state="+stateId+"&action=";
+    
+    $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "jsonp",
+            data: requestdata,
+            success: function (data) {        
+                wikiSearch(data.county,"regionHeader","regionInfo");
+                twitterSearch(data.county,"twitterHeader","twitterInfo");    
+            },
+            error: function (data) {
+                
+            }
+    });
+
+}
+
+
+
+
 $(function () {   
+    
+    
     wikiSearch('Fulton County, Georgia',"regionHeader","regionInfo");
-    renderDataDisplay("incomeChart","getIncomeByCounty","Income By County");
     twitterSearch("Fulton County","twitterHeader","twitterInfo");
+    
+    renderDataDisplay("incomeChart","getIncomeByCounty","Income By County");
+    
     //renderDataDisplay("educationChart","getEducationByCounty","Education Level By County");
     //renderDataDisplay("raceEthnicityChart","getRaceEthnicityByCounty","Race Ethnicity By County");    
 });
@@ -161,7 +191,9 @@ $(function () {
            <h2>Region Information</h2>           
            <div class="well">
             <h3 id="regionHeader"></h3>
-            <div id="regionInfo"></div>
+            <div id="regionInfo">
+            <i class="icon-spinner icon-spin icon-large"></i>Gathering regional information...
+            </div>
            </div>           
            </div>
            <div class="span6">
