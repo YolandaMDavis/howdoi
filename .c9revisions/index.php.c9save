@@ -188,3 +188,8 @@
 {"ts":1370128156567,"patch":[[{"diffs":[[0,"\"121\">Ge"],[1,"orgia</"],[0,"\n       "]],"start1":3977,"start2":3977,"length1":16,"length2":23}]],"length":5188,"saved":false}
 {"ts":1370128157705,"patch":[[{"diffs":[[0,"eorgia</"],[1,"option"],[0,"\n       "]],"start1":3984,"start2":3984,"length1":16,"length2":22}]],"length":5194,"saved":false}
 {"ts":1370128161398,"patch":[[{"diffs":[[0,"</option"],[1,">"],[0,"\n       "]],"start1":3990,"start2":3990,"length1":16,"length2":17}]],"length":5195,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1370131724160,"patch":[[{"diffs":[[0,"select>\n"],[1,"            <select name=\"state\" id=\"state\">\n                <option value=\"121\">Georgia</option>\n            </select>\n"],[0,"        "]],"start1":4014,"start2":4014,"length1":16,"length2":136}]],"length":5315,"saved":false}
+{"ts":1370131730857,"patch":[[{"diffs":[[0,"ame=\"state\" id=\""],[-1,"state"],[1,"county"],[0,"\">\n             "]],"start1":4043,"start2":4043,"length1":37,"length2":38}]],"length":5316,"saved":false}
+{"ts":1370131736298,"patch":[[{"diffs":[[0,"elect name=\""],[-1,"state"],[1,"county"],[0,"\" id=\"county"]],"start1":4036,"start2":4036,"length1":29,"length2":30}]],"length":5317,"saved":false}
+{"ts":1370131747303,"patch":[[{"diffs":[[0,"<option value=\"1"],[-1,"21"],[1,"3"],[0,"\">Georgia</optio"]],"start1":3963,"start2":3963,"length1":34,"length2":33}]],"length":5316,"saved":false}
+{"ts":1370131754201,"patch":[[{"diffs":[[0,"e=\"121\">"],[-1,"Georgia"],[1,"Fulton County"],[0,"</option"]],"start1":4096,"start2":4096,"length1":23,"length2":29}]],"length":5322,"saved":false}

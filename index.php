@@ -1,3 +1,4 @@
+<html>
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="Content-Type" content="text/html;UTF-8"/>
@@ -124,32 +125,21 @@
       </div>
       <div class="modal-body">
         <p>
-        <form action="search.php">
+        <form action="search.php" id="searchRegions" method="POST">
             <select name="state" id="state">
-                <option value="121">Georgia</option>
+                <option value="13">Georgia</option>
+            </select>
+            <select name="county" id="county">
+                <option value="121">Fulton County</option>
             </select>
         </form>
         </p>
       </div>
       <div class="modal-footer">
         <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-        <button class="btn btn-primary">Search Region</button>
+        <button class="btn btn-primary" onclick="$('#searchRegions').submit();">Search Region</button>
       </div>
     </div>
-      <hr>
-
-      <!-- Example row of columns -->
-      <div class="row-fluid">
-        <div class="span6">
-          <h2>Neighborhood Demographics</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-         
-        </div> 
-        <div class="span6">
-          <h2>Neighborhood Demographics</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>         
-        </div> 
-      </div>
       <hr>
 
       <div class="footer">
