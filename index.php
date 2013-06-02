@@ -8,7 +8,7 @@
 <link type="text/css" rel="stylesheet" href="/css/bootstrap-modal.css"/>
 <link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap-responsive.min.css"/>
 <link type="text/css" rel="stylesheet" href="/jquery/jquery-bootstrap/jquery-ui-1.8.16.custom.css"/>
-<link href="http://bootswatch.com/flatly/css/bootswatch.css" rel="stylesheet">
+<link href="http://bootswatch.com/css/bootswatch.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -17,10 +17,7 @@
 <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
 <!--Javascript library api  for google-->
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-<!-- Javascript for this page specifically -->
 
-<script type="text/javascript">
-</script>
 
 <title>Small Biz How Do I</title>
 </head>
@@ -101,6 +98,7 @@
     $(function () {  
         var keyIndex = 0;
         var questionArray = ["Learn the income of a particular market?","Discover more information about my customer base?","Find out information about potential business areas?"];
+        var url = "http://censuslink.herokuapp.com/censuslink.php";
         
         function displayQuestion(){                            
                 $("#questions").fadeOut(1000,function(){
@@ -113,7 +111,58 @@
                 }
                 else{keyIndex++;}
         }        
+
+        function populateCounties(stateId,countyDivId){
         
+            $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "jsonp",
+            data: "action=getCountyList&state="+stateId,
+            success: function (data) {        
+                var options = '';
+                $(data.censusLink[0].counties).each(function (row) {
+                    if(this[0] != 'NAME')                    
+                        options += '<option value="' + this[2] + '">' + this[0] + '</option>';
+                });
+                
+                $('#'+countyDivId).html(options); 
+                $('#'+countyDivId).removeAttr('disabled');
+                
+            },
+            error: function (data) {
+                
+            } });    
+        
+        }
+    
+        function populateStates(stateId){        
+            
+            $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "jsonp",
+            data: "action=getStateIdList",
+            success: function (data) {        
+                var options = '';
+                $(data.censusLink[0].states).each(function (row) {
+                    if(this[0] != 'NAME')                    
+                        options += '<option value="' + this[1] + '">' + this[0] + '</option>';
+                });
+                
+                $('#'+stateId).append(options);
+                
+                $('#'+stateId).live("change", function () {
+                    populateCounties($(this).val(),'county');
+                });
+                
+            },
+            error: function (data) {
+                
+            } });
+    
+       }
+        populateStates('state');
         setInterval(function(){displayQuestion();},3000);
         
     });
@@ -151,10 +200,9 @@
         <p>
         <form action="search.php" id="searchRegions" method="POST">
             <select name="state" id="state">
-                <option value="13">Georgia</option>
+                <option value="NONE">Select a State</option>
             </select>
-            <select name="county" id="county">
-                <option value="121">Fulton County</option>
+            <select name="county" id="county" disabled="true">               
             </select>
         </form>
         </p>

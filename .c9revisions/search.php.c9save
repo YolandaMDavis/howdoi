@@ -355,3 +355,79 @@
 {"ts":1370160971295,"patch":[[{"diffs":[[0,"</i>"],[-1," Loading region income data..."],[1,"Collect"],[0,"</di"]],"start1":5048,"start2":5048,"length1":38,"length2":15}]],"length":7068,"saved":false}
 {"ts":1370160977422,"patch":[[{"diffs":[[0,">Collect"],[1,"ing community chatter..."],[0,"</div>\n "]],"start1":5051,"start2":5051,"length1":16,"length2":40}]],"length":7092,"saved":false}
 {"contributors":[],"silentsave":true,"ts":1370162435072,"patch":[[{"diffs":[[0,"heet\" href=\""],[-1,"/bootstrap/css"],[1,"http://bootswatch.com/flatly"],[0,"/bootstrap.m"]],"start1":260,"start2":260,"length1":38,"length2":52},{"diffs":[[0,"stom.css\"/>\n"],[1,"<link href=\"http://bootswatch.com/flatly/css/bootswatch.css\" rel=\"stylesheet\">\n"],[0,"<link href=\""]],"start1":576,"start2":576,"length1":24,"length2":103}]],"length":7185,"saved":false}
+{"ts":1370163905603,"patch":[[{"diffs":[[0,"ion () {   \n"],[1,"    \n"],[0,"    wikiSear"]],"start1":3696,"start2":3696,"length1":24,"length2":29}]],"length":7190,"saved":false}
+{"ts":1370163906902,"patch":[[{"diffs":[[0,"() {   \n    "],[1,"//va"],[0,"\n    wikiSea"]],"start1":3700,"start2":3700,"length1":24,"length2":28}]],"length":7194,"saved":false}
+{"ts":1370163908199,"patch":[[{"diffs":[[0,"    //va"],[1,"r stat"],[0,"\n    wik"]],"start1":3708,"start2":3708,"length1":16,"length2":22}]],"length":7200,"saved":false}
+{"ts":1370163909252,"patch":[[{"diffs":[[0,"var stat"],[1,"e"],[0,"\n    wik"]],"start1":3714,"start2":3714,"length1":16,"length2":17}]],"length":7201,"saved":false}
+{"ts":1370163911639,"patch":[[{"diffs":[[0,"ar state"],[1,"Id"],[0,"\n    wik"]],"start1":3715,"start2":3715,"length1":16,"length2":18}]],"length":7203,"saved":false}
+{"ts":1370163917404,"patch":[[{"diffs":[[0," stateId"],[1," = "],[0,"\n    wik"]],"start1":3717,"start2":3717,"length1":16,"length2":19}]],"length":7206,"saved":false}
+{"ts":1370163918103,"patch":[[{"diffs":[[0,"ateId = "],[1,";"],[0,"\n    wik"]],"start1":3720,"start2":3720,"length1":16,"length2":17}]],"length":7207,"saved":false}
+{"ts":1370163919415,"patch":[[{"diffs":[[0,"ateId = "],[1,"''"],[0,";\n    wi"]],"start1":3720,"start2":3720,"length1":16,"length2":18}]],"length":7209,"saved":false}
+{"ts":1370163920025,"patch":[[{"diffs":[[0,"d = '';\n"],[1,"    \n"],[0,"    wiki"]],"start1":3724,"start2":3724,"length1":16,"length2":21}]],"length":7214,"saved":false}
+{"ts":1370163925375,"patch":[[{"diffs":[[0,"d = '';\n    "],[1,"//var countI"],[0,"\n    wikiSea"]],"start1":3724,"start2":3724,"length1":24,"length2":36}]],"length":7226,"saved":false}
+{"ts":1370163927896,"patch":[[{"diffs":[[0,"var coun"],[-1,"tI"],[1,"yId "],[0,"\n    wik"]],"start1":3738,"start2":3738,"length1":18,"length2":20}]],"length":7228,"saved":false}
+{"ts":1370163929075,"patch":[[{"diffs":[[0,"counyId "],[1,"= "],[0,"\n    wik"]],"start1":3742,"start2":3742,"length1":16,"length2":18}]],"length":7230,"saved":false}
+{"ts":1370163930429,"patch":[[{"diffs":[[0,"unyId = "],[1,"''"],[0,"\n    wik"]],"start1":3744,"start2":3744,"length1":16,"length2":18}]],"length":7232,"saved":false}
+{"ts":1370163931388,"patch":[[{"diffs":[[0,"yId = ''"],[1,";"],[0,"\n    wik"]],"start1":3746,"start2":3746,"length1":16,"length2":17}]],"length":7233,"saved":false}
+{"ts":1370163938644,"patch":[[{"diffs":[[0," stateId = '"],[1,"<?php echo $county; ?>"],[0,"';\n    //var"]],"start1":3717,"start2":3717,"length1":24,"length2":46}]],"length":7255,"saved":false}
+{"ts":1370163942479,"patch":[[{"diffs":[[0,"<?php echo $"],[-1,"county"],[1,"state"],[0,"; ?>';\n    /"]],"start1":3729,"start2":3729,"length1":30,"length2":29}]],"length":7254,"saved":false}
+{"ts":1370163945995,"patch":[[{"diffs":[[0,"nyId = '"],[1,"<?php echo $county; ?>"],[0,"';\n    w"]],"start1":3766,"start2":3766,"length1":16,"length2":38}]],"length":7276,"saved":false}
+{"ts":1370163956173,"patch":[[{"diffs":[[0,"ounty; ?>';\n"],[1,"    \n"],[0,"    wikiSear"]],"start1":3787,"start2":3787,"length1":24,"length2":29}]],"length":7281,"saved":false}
+{"ts":1370163957639,"patch":[[{"diffs":[[0,"; ?>';\n    \n"],[1,"    //\n"],[0,"    wikiSear"]],"start1":3792,"start2":3792,"length1":24,"length2":31}]],"length":7288,"saved":false}
+{"ts":1370163962004,"patch":[[{"diffs":[[0," \n    //"],[1,"var"],[0,"\n    wik"]],"start1":3802,"start2":3802,"length1":16,"length2":19}]],"length":7291,"saved":false}
+{"ts":1370163964373,"patch":[[{"diffs":[[0,"   //var"],[1," stateN"],[0,"\n    wik"]],"start1":3805,"start2":3805,"length1":16,"length2":23}]],"length":7298,"saved":false}
+{"ts":1370163965874,"patch":[[{"diffs":[[0,"r stateN"],[1,"ame "],[0,"\n    wik"]],"start1":3812,"start2":3812,"length1":16,"length2":20}]],"length":7302,"saved":false}
+{"ts":1370163967353,"patch":[[{"diffs":[[0,"ateName "],[1,"= "],[0,"\n    wik"]],"start1":3816,"start2":3816,"length1":16,"length2":18}]],"length":7304,"saved":false}
+{"ts":1370163974777,"patch":[[{"diffs":[[0,"    "],[-1,"//var stateName = "],[0,"\n   "]],"start1":3804,"start2":3804,"length1":26,"length2":8}]],"length":7286,"saved":false}
+{"ts":1370163980540,"patch":[[{"diffs":[[0,"});\n\n}\n\n"],[1,"\n\n"],[0,"$(functi"]],"start1":3681,"start2":3681,"length1":16,"length2":18}]],"length":7288,"saved":false}
+{"ts":1370163993063,"patch":[[{"diffs":[[0,"});\n\n}\n\n"],[1,"function "],[0,"\n\n$(func"]],"start1":3681,"start2":3681,"length1":16,"length2":25}]],"length":7297,"saved":false}
+{"ts":1370164009861,"patch":[[{"diffs":[[0,"\n}\n\n"],[-1,"function \n"],[0,"\n$(f"]],"start1":3685,"start2":3685,"length1":18,"length2":8}]],"length":7287,"saved":false}
+{"ts":1370164051274,"patch":[[{"diffs":[[0,");\n\n}\n\n\n"],[1,"\n\n"],[0,"$(functi"]],"start1":3682,"start2":3682,"length1":16,"length2":18}]],"length":7289,"saved":false}
+{"ts":1370164060330,"patch":[[{"diffs":[[0,"    "],[-1,"twitterSearch(\"Fulton County\",\"twitterHeader\",\"twitterInfo\");"],[0,"\n   "]],"start1":3959,"start2":3959,"length1":69,"length2":8}]],"length":7228,"saved":false}
+{"ts":1370164061586,"patch":[[{"diffs":[[0,"gionInfo\");\n"],[1,"    \n"],[0,"    renderDa"]],"start1":3870,"start2":3870,"length1":24,"length2":29}]],"length":7233,"saved":false}
+{"ts":1370164063003,"patch":[[{"diffs":[[0,"Info\");\n    "],[1,"twitterSearch(\"Fulton County\",\"twitterHeader\",\"twitterInfo\");"],[0,"\n    renderD"]],"start1":3874,"start2":3874,"length1":24,"length2":85}]],"length":7294,"saved":false}
+{"ts":1370164064031,"patch":[[{"diffs":[[0,"tterInfo\");\n"],[1,"    \n"],[0,"    renderDa"]],"start1":3936,"start2":3936,"length1":24,"length2":29}]],"length":7299,"saved":false}
+{"ts":1370164070412,"patch":[[{"diffs":[[0,"});\n\n}\n\n"],[1,"funct\n\n"],[0,"\n\n\n$(fun"]],"start1":3681,"start2":3681,"length1":16,"length2":23}]],"length":7306,"saved":false}
+{"ts":1370164071565,"patch":[[{"diffs":[[0,"}\n\nfunct"],[1,"ion "],[0,"\n\n\n\n\n$(f"]],"start1":3686,"start2":3686,"length1":16,"length2":20}]],"length":7310,"saved":false}
+{"ts":1370164075977,"patch":[[{"diffs":[[0,"unction "],[1,"renderS"],[0,"\n\n\n\n\n$(f"]],"start1":3690,"start2":3690,"length1":16,"length2":23}]],"length":7317,"saved":false}
+{"ts":1370164078945,"patch":[[{"diffs":[[0," renderS"],[1,"ear"],[0,"\n\n\n\n\n$(f"]],"start1":3697,"start2":3697,"length1":16,"length2":19}]],"length":7320,"saved":false}
+{"ts":1370164079833,"patch":[[{"diffs":[[0,"nderSear"],[1,"c"],[0,"\n\n\n\n\n$(f"]],"start1":3700,"start2":3700,"length1":16,"length2":17}]],"length":7321,"saved":false}
+{"ts":1370164080588,"patch":[[{"diffs":[[0,"derSearc"],[1,"h"],[0,"\n\n\n\n\n$(f"]],"start1":3701,"start2":3701,"length1":16,"length2":17}]],"length":7322,"saved":false}
+{"ts":1370164082844,"patch":[[{"diffs":[[0,"erSearch"],[1,"Content"],[0,"\n\n\n\n\n$(f"]],"start1":3702,"start2":3702,"length1":16,"length2":23}]],"length":7329,"saved":false}
+{"ts":1370164083715,"patch":[[{"diffs":[[0,"hContent"],[1,"()"],[0,"\n\n\n\n\n$(f"]],"start1":3709,"start2":3709,"length1":16,"length2":18}]],"length":7331,"saved":false}
+{"ts":1370164084810,"patch":[[{"diffs":[[0,"ontent()"],[1,"{}"],[0,"\n\n\n\n\n$(f"]],"start1":3711,"start2":3711,"length1":16,"length2":18}]],"length":7333,"saved":false}
+{"ts":1370164086177,"patch":[[{"diffs":[[0,"ntent(){"],[1,"\n\n\n"],[0,"}\n\n\n\n\n$("]],"start1":3712,"start2":3712,"length1":16,"length2":19}]],"length":7336,"saved":false}
+{"ts":1370164089424,"patch":[[{"diffs":[[0,"   \n"],[-1,"    //var stateId = '<?php echo $state; ?>';\n    //var counyId = '<?php echo $county; ?>';\n"],[0,"    "]],"start1":3744,"start2":3744,"length1":99,"length2":8}]],"length":7245,"saved":false}
+{"ts":1370164092049,"patch":[[{"diffs":[[0,"tent(){\n"],[1,"    //var stateId = '<?php echo $state; ?>';\n    //var counyId = '<?php echo $county; ?>';\n"],[0,"\n\n}\n\n\n\n\n"]],"start1":3713,"start2":3713,"length1":16,"length2":107}]],"length":7336,"saved":false}
+{"ts":1370164100833,"patch":[[{"diffs":[[0," ?>';\n\n\n"],[1,"\n"],[0,"}\n\n\n\n\n$("]],"start1":3806,"start2":3806,"length1":16,"length2":17}]],"length":7337,"saved":false}
+{"ts":1370164101586,"patch":[[{"diffs":[[0,"; ?>';\n\n"],[1,"    var url = \"http://censuslink.herokuapp.com/censuslink.php\";\n    var requestdata = \"county=<?php echo $county; ?>&state=<?php echo $state; ?>&action=\";\n    \n    $.ajax({\n            type: \"GET\",\n            url: url,\n            dataType: \"jsonp\",\n            data: requestdata+action,\n            success: function (data) {        \n                //displayAttr = {divId:divId,chartType:'bar',chartTitle:title};        \n                //displayData(displayAttr,data);\n                alert('make call to visualizations');\n            },\n            error: function (data) {\n                $('#'+divId).text('Unable to display visualization');\n            }\n    });\n\n"],[0,"\n\n}\n\n\n\n\n"]],"start1":3805,"start2":3805,"length1":16,"length2":688}]],"length":8009,"saved":false}
+{"ts":1370164118837,"patch":[[{"diffs":[[0,"    "],[-1,"            //displayAttr = {divId:divId,chartType:'bar',chartTitle:title};        \n                //displayData(displayAttr,data);\n                alert('make call to visualizations');"],[1,"wikiSearch('Fulton County, Georgia',\"regionHeader\",\"regionInfo\");\n    twitterSearch(\"Fulton County\",\"twitterHeader\",\"twitterInfo\");\n    "],[0,"\n   "]],"start1":4149,"start2":4149,"length1":194,"length2":144}]],"length":7959,"saved":false}
+{"ts":1370164120642,"patch":[[{"diffs":[[0,") {        \n"],[1,"            "],[0,"    wikiSear"]],"start1":4137,"start2":4137,"length1":24,"length2":36}]],"length":7971,"saved":false}
+{"ts":1370164123247,"patch":[[{"diffs":[[0,",\"regionInfo\");\n"],[1,"            "],[0,"    twitterSearc"]],"start1":4215,"start2":4215,"length1":32,"length2":44}]],"length":7983,"saved":false}
+{"ts":1370164124687,"patch":[[{"diffs":[[0,",\"twitterInfo\");"],[-1,"\n"],[0,"    \n           "]],"start1":4292,"start2":4292,"length1":33,"length2":32}]],"length":7982,"saved":false}
+{"ts":1370164130115,"patch":[[{"diffs":[[0,"  });\n\n\n"],[-1,"\n"],[0,"}\n\n\n\n\n$("]],"start1":4451,"start2":4451,"length1":17,"length2":16}]],"length":7981,"saved":false}
+{"ts":1370164135287,"patch":[[{"diffs":[[0,"   });\n\n"],[-1,"\n"],[0,"}\n\n\n\n\n$("]],"start1":4450,"start2":4450,"length1":17,"length2":16}]],"length":7980,"saved":false}
+{"ts":1370164142526,"patch":[[{"diffs":[[0,"tent(){\n    "],[-1,"//"],[0,"var stateId "]],"start1":3713,"start2":3713,"length1":26,"length2":24}]],"length":7978,"saved":false}
+{"ts":1370164144670,"patch":[[{"diffs":[[0,">';\n    "],[-1,"//"],[0,"var coun"]],"start1":3760,"start2":3760,"length1":18,"length2":16}]],"length":7976,"saved":false}
+{"ts":1370164217799,"patch":[[{"diffs":[[0,"\"county="],[-1,"<?php echo $county; ?>"],[0,"&state=<"]],"start1":3895,"start2":3895,"length1":38,"length2":16}]],"length":7954,"saved":false}
+{"ts":1370164219447,"patch":[[{"diffs":[[0,"\"county="],[1,"\"="],[0,"&state=<"]],"start1":3895,"start2":3895,"length1":16,"length2":18}]],"length":7956,"saved":false}
+{"ts":1370164221077,"patch":[[{"diffs":[[0,"county=\""],[-1,"="],[0,"&state=<"]],"start1":3896,"start2":3896,"length1":17,"length2":16}]],"length":7955,"saved":false}
+{"ts":1370164224792,"patch":[[{"diffs":[[0,"county=\""],[1,"+stateId+"],[0,"&state=<"]],"start1":3896,"start2":3896,"length1":16,"length2":25}]],"length":7964,"saved":false}
+{"ts":1370164225935,"patch":[[{"diffs":[[0,"stateId+"],[1,"\""],[0,"&state=<"]],"start1":3905,"start2":3905,"length1":16,"length2":17}]],"length":7965,"saved":false}
+{"ts":1370164228446,"patch":[[{"diffs":[[0,"eId+\"&state="],[1,"\""],[0,"<?php echo $"]],"start1":3909,"start2":3909,"length1":24,"length2":25}]],"length":7966,"saved":false}
+{"ts":1370164230325,"patch":[[{"diffs":[[0,"&state=\""],[1,"+"],[0,"<?php ec"]],"start1":3914,"start2":3914,"length1":16,"length2":17}]],"length":7967,"saved":false}
+{"ts":1370164232817,"patch":[[{"diffs":[[0,"state=\"+"],[1,"stateI"],[0,"<?php ec"]],"start1":3915,"start2":3915,"length1":16,"length2":22}]],"length":7973,"saved":false}
+{"ts":1370164233970,"patch":[[{"diffs":[[0,"\"+stateI"],[1,"d"],[0,"<?php ec"]],"start1":3921,"start2":3921,"length1":16,"length2":17}]],"length":7974,"saved":false}
+{"ts":1370164239194,"patch":[[{"diffs":[[0,"+stateId"],[-1,"<?php echo $state; ?>"],[1,"+\""],[0,"&action="]],"start1":3922,"start2":3922,"length1":37,"length2":18}]],"length":7955,"saved":false}
+{"ts":1370164243654,"patch":[[{"diffs":[[0,"ounty=\"+"],[-1,"state"],[1,"c"],[0,"Id+\"&sta"]],"start1":3897,"start2":3897,"length1":21,"length2":17}]],"length":7951,"saved":false}
+{"ts":1370164245372,"patch":[[{"diffs":[[0,"unty=\"+c"],[1,"ounty"],[0,"Id+\"&sta"]],"start1":3898,"start2":3898,"length1":16,"length2":21}]],"length":7956,"saved":false}
+{"ts":1370164256200,"patch":[[{"diffs":[[0,"ata: requestdata"],[-1,"+action"],[0,",\n            su"]],"start1":4053,"start2":4053,"length1":39,"length2":32}]],"length":7949,"saved":false}
+{"ts":1370164286299,"patch":[[{"diffs":[[0,"data"],[-1,"+action"],[0,",\n  "]],"start1":3290,"start2":3290,"length1":15,"length2":8}]],"length":7942,"saved":false}
+{"ts":1370164293410,"patch":[[{"diffs":[[0,"var coun"],[1,"t"],[0,"yId = '<"]],"start1":3761,"start2":3761,"length1":16,"length2":17}]],"length":7943,"saved":false}
+{"ts":1370164311675,"patch":[[{"diffs":[[0,"rch("],[-1,"'Fulton County, Georgia'"],[1,"data."],[0,",\"re"]],"start1":4135,"start2":4135,"length1":32,"length2":13}]],"length":7924,"saved":false}
+{"ts":1370164313975,"patch":[[{"diffs":[[0,"ch(data."],[1,"county"],[0,",\"region"]],"start1":4136,"start2":4136,"length1":16,"length2":22}]],"length":7930,"saved":false}
+{"ts":1370164322210,"patch":[[{"diffs":[[0,"itterSearch("],[-1,"\"Fulton County\""],[1,"data.c"],[0,",\"twitterHea"]],"start1":4199,"start2":4199,"length1":39,"length2":30}]],"length":7921,"saved":false}
+{"ts":1370164324082,"patch":[[{"diffs":[[0,"h(data.c"],[1,"ounty"],[0,",\"twitte"]],"start1":4209,"start2":4209,"length1":16,"length2":21}]],"length":7926,"saved":false}
+{"ts":1370164357613,"patch":[[{"diffs":[[0,"    "],[-1,"$('#'+divId).text('Unable to display visualization');"],[0,"\n   "]],"start1":4323,"start2":4323,"length1":61,"length2":8}]],"length":7873,"saved":false}
+{"ts":1370164518494,"patch":[[{"diffs":[[0,"ata: requestdata"],[1,"+action"],[0,",\n            su"]],"start1":3278,"start2":3278,"length1":32,"length2":39}]],"length":7880,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1370167624899,"patch":[[{"diffs":[[0,"tch.com/"],[-1,"flatly/"],[0,"css/boot"]],"start1":614,"start2":614,"length1":23,"length2":16},{"diffs":[[0,"onInfo\">"],[1,"\n            <i class=\"icon-spinner icon-spin icon-large\"></i>Gathering regional information...\n            "],[0,"</div>\n "]],"start1":5532,"start2":5532,"length1":16,"length2":124}]],"length":7981,"saved":false}
