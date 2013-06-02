@@ -100,23 +100,7 @@ function drawChart() {
   * @tparam JSON    objMetaData_json_in  the format and display details
   * @tparam string  txtData_json         the data to be displayed, unparsed JSON
   */
-function displayData(objMetaData_json_in, objData_json_in) {
-
-  var objData_jsonX = objData_json_in;
-  objMetaData_json = objMetaData_json_in;
-
-  var thiskey = objData_jsonX["censusLink"]["keys"][0];
-  objData_json = objData_jsonX["censusLink"][thiskey]["results"];
-
-  if( objMetaData_json.chartType != "table" ) {
-    google.load("visualization", "1", {packages:["corechart"]});
-    google.setOnLoadCallback(drawChart);
-  }
-
-  google.load('visualization', '1', {packages:['table']});
-  google.setOnLoadCallback(drawTable);
-
-}
+ 
 ////////////////////////////////////////////////////////////////////////
 /**
   * TEST/EXAMPLE

@@ -124,6 +124,7 @@ function renderDataDisplay(divId,action,title){
             success: function (data) {                    
                 var txtMetaData = { "divId" : divId, "chartType"  : "pie" , "chartTitle" : title};               
                 displayData(txtMetaData,data);
+                
             },
             error: function (data) {
                 $('#'+divId).text('Unable to display visualization');
@@ -142,11 +143,10 @@ function renderSearchContent(){
     twitterSearch(countyName,"twitterHeader","twitterInfo");    
 }
 
+
 $(function () {   
-    
     renderSearchContent();
-    renderDataDisplay("incomeChart","getIncomeByCounty","Income By County");
-    
+    renderDataDisplay("incomeChart","getIncomeByCounty","Income By County");    
     //renderDataDisplay("educationChart","getEducationByCounty","Education Level By County");
     //renderDataDisplay("raceEthnicityChart","getRaceEthnicityByCounty","Race Ethnicity By County");    
 });
@@ -198,7 +198,7 @@ $(function () {
             </div>
             <div id="collapseOne" class="accordion-body collapse in">
               <div class="accordion-inner">
-                <div id="incomeChart">
+                <div id="incomeChartX">
                 <i class="icon-spinner icon-spin icon-large"></i> Loading region income data...
                 </div>
               </div>
