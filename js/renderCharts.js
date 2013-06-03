@@ -19,15 +19,13 @@
 
  */
 
-var objData_json;
-var objMetaData_json;
 
 ////////////////////////////////////////////////////////////////////////
 /**
   * Draw table using data objData_json
   * expects <div id="chart_div"></div>
   */
-function drawTable() {
+function drawTable(objData_json,objMetaData_json) {
   var arrData = new Array();
 
   for(var key in objData_json) {
@@ -69,7 +67,7 @@ function drawTable() {
   * Draw chart using data objData_json
   * expects <div id="table_div"></div>
   */
-function drawChart() {
+function drawChart(objData_json,objMetaData_json) {
 
   var arrData = new Array();
 
@@ -104,19 +102,18 @@ function drawChart() {
 
  
 
-function displayData(objMetaData_json_in, objData_json_in) {
+ function displayData(objMetaData_json_in, objData_json_in) {
 
-  var thiskey = objData_json_in["censusLink"]["keys"][0];
-  objData_json = objData_json_in["censusLink"][thiskey]["results"];
-  objMetaData_json = objMetaData_json_in;
+  var thisKey = objData_json_in["censusLink"]["keys"][0];
+  var objData_json = objData_json_in["censusLink"][thisKey]["results"];
+  var objMetaData_json = objMetaData_json_in;
 
   if( objMetaData_json.chartType != "table" ) {
-    //google.load("visualization", "1", {packages:["corechart"]});
-    google.setOnLoadCallback(drawChart);
+   drawChart(objData_json,objMetaData_json);
   }
-
-  //google.load('visualization', '1', {packages:['table']});
-  google.setOnLoadCallback(drawTable);
+  if(objMetaData_json.divId_table != undefined){
+   drawTable(objData_json,objMetaData_json);
+  }
 
 }
 

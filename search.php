@@ -111,7 +111,7 @@ $stateName = $_POST['stateName'];
 
 <script language="javascript">
 
-function renderDataDisplay(divId,action,title){
+function renderDataDisplay(divId,action,title,chartType){
 
     var url = "http://censuslink.herokuapp.com/censuslink.php";
     var requestdata = "county=<?php echo $county; ?>&state=<?php echo $state; ?>&action=";
@@ -122,7 +122,7 @@ function renderDataDisplay(divId,action,title){
             dataType: "jsonp",
             data: requestdata+action,
             success: function (data) {                    
-                var txtMetaData = { divId : divId, chartType  : 'pie' , chartTitle: title};               
+                var txtMetaData = { divId : divId, chartType  : chartType , chartTitle: title};               
                 displayData(txtMetaData,data);
                 
             },
@@ -139,22 +139,22 @@ function renderDataDisplay(divId,action,title){
 function renderSearchContent(){
     var stateName = '<?php echo $stateName; ?>';
     var countyName = '<?php echo $countyName; ?>';
-    wikiSearch(stateName,"regionHeader","regionInfo");
+    wikiSearch(countyName,"regionHeader","regionInfo");
     twitterSearch(countyName,"twitterHeader","twitterInfo");    
 }
 
 
 $(function () {   
-    renderSearchContent();
-    //renderDataDisplay("educationChart","getEducationByCounty","Education Level By County");
-    //renderDataDisplay("raceEthnicityChart","getRaceEthnicityByCounty","Race Ethnicity By County");    
+    renderSearchContent();       
 });
 
 
-   google.load("visualization", "1", {packages:["corechart"]});
-    google.load('visualization', '1', {packages:['table']});
-    renderDataDisplay("incomeChart","getIncomeByCounty","Income By County");    
-
+google.load("visualization", "1", {packages:["corechart","table"], callback:function(){    
+    renderDataDisplay("incomeChart","getIncomeByCounty","Income By County",'pie');    
+    renderDataDisplay("educationChart","getEducationByCounty","Education Level By County",'bar');
+    renderDataDisplay("raceEthnicityChart","getEthnicityByCounty","Race Ethnicity By County",'pie');
+}});
+      
 </script>
 
 <div class="container">
@@ -215,8 +215,10 @@ $(function () {
               </a>
             </div>
             <div id="collapseTwo" class="accordion-body collapse">
-              <div class="accordion-inner" id="educationChart">
+              <div class="accordion-inner">
+                <div id="educationChart">
                 <i class="icon-spinner icon-spin icon-large"></i> Loading region Education data...
+                </div>
               </div>
             </div>
           </div>
@@ -227,7 +229,7 @@ $(function () {
               </a>
             </div>
             <div id="collapseThree" class="accordion-body collapse">
-              <div class="accordion-inner" id="raceEthnicityChart">
+              <div class="accordion-inner">
                 <div id="raceEthnicityChart">
                 <i class="icon-spinner icon-spin icon-large"></i> Loading Race and Ethnicity data...
                 </div
