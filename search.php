@@ -100,6 +100,7 @@
     border-right: 0;
     border-radius: 0 3px 3px 0;
   }
+  
 </style>
 
 <?php
@@ -151,7 +152,7 @@ $(function () {
 
 google.load("visualization", "1", {packages:["corechart","table"], callback:function(){    
     renderDataDisplay("incomeChart","getIncomeByCounty","Income By County",'pie');    
-    renderDataDisplay("educationChart","getEducationByCounty","Education Level By County",'bar');
+    renderDataDisplay("educationChart","getEducationByCounty","Education Level By County",'pie');
     renderDataDisplay("raceEthnicityChart","getEthnicityByCounty","Race Ethnicity By County",'pie');
 }});
       
@@ -203,7 +204,7 @@ google.load("visualization", "1", {packages:["corechart","table"], callback:func
             <div id="collapseOne" class="accordion-body collapse in">
               <div class="accordion-inner">
                 <div id="incomeChart">
-                <i class="icon-spinner icon-spin icon-large"></i> Loading region income data...
+                    <i class="icon-spinner icon-spin icon-large"></i> Loading region income data...
                 </div>
               </div>
             </div>

@@ -76,8 +76,14 @@ function drawChart(objData_json,objMetaData_json) {
   }
 
   var data = google.visualization.arrayToDataTable(arrData);
-
+  
   var options = { title: objMetaData_json.chartTitle, allowHtml: true, width: 900, height: 500 };
+  
+  // account for smaller screens.
+  if (screen.width < 900) {
+    options = { title: objMetaData_json.chartTitle, allowHtml: true, width: screen.width, height: 500 };
+  } 
+
 
   var chart;
 
@@ -85,11 +91,12 @@ function drawChart(objData_json,objMetaData_json) {
     chart = new google.visualization.PieChart(document.getElementById(objMetaData_json.divId));
   }
   else if( objMetaData_json.chartType == "bar" ) {
+    // bug in bar and column charts on mobile device was causing an 'undefined error' when 
+    // screen width is under 400. 
     chart = new google.visualization.BarChart(document.getElementById(objMetaData_json.divId));
   }
-
+ 
   chart.draw(data, options);
-
 }
 
 
