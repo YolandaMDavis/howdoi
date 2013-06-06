@@ -110,7 +110,7 @@
     $(function () {  
         var keyIndex = 0;
         var questionArray = ["Learn the income of a particular market?","Discover more information about my customer base?","Find out information about potential business areas?"];
-        var url = "http://censuslink.herokuapp.com/censuslink.php";
+        var url = "http://censuslink.herokuapp.com/beta/censuslink.php";
         
         function displayQuestion(){                            
                 $("#questions").fadeOut(1000,function(){

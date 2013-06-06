@@ -114,7 +114,7 @@ $stateName = $_POST['stateName'];
 
 function renderDataDisplay(divId,action,title,chartType){
 
-    var url = "http://censuslink.herokuapp.com/censuslink.php";
+    var url = "http://censuslink.herokuapp.com/beta/censuslink.php";
     var requestdata = "county=<?php echo $county; ?>&state=<?php echo $state; ?>&action=";
     
     $.ajax({
